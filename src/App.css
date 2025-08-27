@@ -1,0 +1,105 @@
+/* General Layout */
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  transition: background 0.6s ease-in-out;
+  color: white;
+}
+
+/* Dynamic Backgrounds */
+.app.default {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+.app.sunny {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+.app.rainy {
+  background: linear-gradient(135deg, #00c6fb, #005bea);
+}
+.app.cloudy {
+  background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+}
+.app.snowy {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+.app.stormy {
+  background: linear-gradient(135deg, #232526, #414345);
+}
+
+/* Input & Button */
+form {
+  margin: 20px 0;
+}
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  margin-right: 10px;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #555;
+}
+
+/* Weather Card */
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  min-width: 300px;
+  color: white;
+}
+.weather-card .icon {
+  font-size: 40px;
+}
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+}
+.weather-grid div {
+  padding: 10px;
+}
+.weather-grid .big {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Forecast */
+.forecast-container {
+  margin-top: 30px;
+}
+.forecast-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.forecast-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  padding: 15px;
+  border-radius: 12px;
+  min-width: 100px;
+  color: white;
+}
+.forecast-card .icon {
+  font-size: 25px;
+}
+.forecast-card .day {
+  font-weight: bold;
+  margin-top: 5px;
+  display: block;
+}
